@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF8">
+        <title>
+           Dados D&D 
+        </title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div class="topo">
+            <h1 style="font-size: 50px;">Dados de Dungeons & Dragons.</h1>
+            <p>Escolha o dado que deseja rodar e aperte o botão.</p>
+        </div>
+        <div class="result">
+            <p>O número do dado é:</p>
+                <div id="resultado">
+                </div>
+        </div> 
+        <div class="firstRow">
+            <div id="d4">
+                <h2>Dado D4</h2>
+                <div class="image">
+                    <img id ="img" src="images/d4.jpg" alt="dado D4">
+                </div>
+                </br>
+                <form id="rodarDado" name="rodarDado" onsubmit="rodaDado(4); return false;">
+                    <button id="btn" type="submit">Rodar Dado</button>
+                </form>
+                </br>
+            </div>
+            <div id="d6">
+                <h2>Dado D6</h2>
+                <div class="image">
+                    <img id ="img" src="images/d6.jpg" alt="dado D6">
+                </div>
+                </br>
+                <form id="rodarDado" name="rodarDado" onsubmit="rodaDado(6); return false;">
+                    <button id="btn" type="submit">Rodar Dado</button>
+                </form>
+                </br>
+            </div>
+            <div id="d8">
+                <h2>Dado D8</h2>
+                <div class="image">
+                    <img id ="img" src="images/d8.jpg" alt="dado D8">
+                </div>
+                </br>
+                <form id="rodarDado" name="rodarDado" onsubmit="rodaDado(8); return false;">
+                    <button id="btn" type="submit">Rodar Dado</button>
+                </form>
+                </br>
+            </div>
+        </div>    
+        <div class="secondRow">
+            <div id="d10">
+                <h2>Dado D10</h2>
+                <div class="image">
+                    <img id ="img" src="images/d10.jpg" alt="dado D10">
+                </div>
+                </br>
+                <form id="rodarDado" name="rodarDado" onsubmit="rodaDado(10); return false;">
+                    <button id="btn" type="submit">Rodar Dado</button>
+                </form>
+                </br>
+            </div>
+            <div id="d12">
+                <h2>Dado D12</h2>
+                <div class="image">
+                    <img id ="img" src="images/d12.jpg" alt="dado D12">
+                </div>
+                </br>
+                <form id="rodarDado" name="rodarDado" onsubmit="rodaDado(12); return false;">
+                    <button id="btn" type="submit">Rodar Dado</button>
+                </form>
+                </br>
+            </div>
+            <div id="d20">
+                <h2>Dado D20</h2>
+                <div class="image">
+                    <img id ="img" src="images/d20.jpg" alt="dado D20">
+                </div>
+                </br>
+                <form id="rodarDado" name="rodarDado" onsubmit="rodaDado(20); return false;">
+                    <button id="btn" type="submit">Rodar Dado</button>
+                </form>
+                </br>    
+            </div>    
+        </div>
+    <script src="javascript/calcDado.js"></script>
+    </body>
+</html>
